@@ -4,70 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Project</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <header class="header">
+      <a href="#home" class="logo"> Stephen Joshua <span>Manullang</span> </a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Project</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <button class="gradient-btn">Contact Me</button>
     </header>
-    <section id="home">
-      <h1>I'm <span>Stephen Joshua Manullang</span></h1>
-      <p>Fullstack JavaScript Developer passionate about building web apps.</p>
-    </section>
+    <main>
+      <section id="home">
+        <div class="home-content">
+          <h1>I'm <span>Stephen Joshua Manullang</span></h1>
+          <h3>
+            Fullstack <span>JavaScript Developer</span> passionate about
+            building web apps.
+          </h3>
+          <div class="social-acc">
+            <a href="#">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn">Hire</a>
+          </div>
+        </div>
+      </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Enthusiastic and detail-oriented Fullstack Javascript with hands-on
-        experience. Proficient in React.js, Next.js, Express, Node.js, RESTful
-        APIs, PostgreSQL, GraphQL, MongoDB, and TypeScript, with strong interest
-        in crafting responsive, high performance web applications. Eager to grow
-        and contribute to innovative projects in a dynamic development team.
-      </p>
-      <h2>Education</h2>
-      <ul>
-        <li>SMK Negeri 1 Batam - Software Engineering (2023 - 2025)</li>
-      </ul>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React.js, Next.js</li>
-        <li>Node.js, Express.js</li>
-        <li>PostgreSQL, MongoDB, GraphQL</li>
-        <li>Git, Github</li>
-      </ul>
-    </section>
-    <section id="projects">
-      <h2>Project</h2>
-
-      <div class="project">
-        <h3>Job Portal App</h3>
+      <section id="about" class="about">
+        <h2>About <span>Me</span></h2>
         <p>
-          Fullstack web app with authentication, CRUD features, and responsive
-          UI built using React.js, Node.js, and Tailwind CSS.
+          Enthusiastic and detail-oriented Fullstack Javascript with hands-on
+          experience. Proficient in React.js, Next.js, Express, Node.js, RESTful
+          APIs, PostgreSQL, GraphQL, MongoDB, and TypeScript, with strong
+          interest in crafting responsive, high performance web applications.
+          Eager to grow and contribute to innovative projects in a dynamic
+          development team.
         </p>
-      </div>
+        <h2>Education</h2>
+        <ul>
+          <li>SMK Negeri 1 Batam - Software Engineering (2023 - 2025)</li>
+        </ul>
+      </section>
 
-      <div class="project">
-        <h3>Coliving</h3>
-        <p>
-          Single Page Application (SPA) for property rentals built using
-          React.js and RESTful APIs. Features include property booking, “Add to
-          Favorites”, JWT authentication, and data caching for optimized
-          performance. Designed with a modern responsive UI using Tailwind CSS.
-        </p>
-      </div>
-    </section>
-    
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React.js, Next.js</li>
+          <li>Node.js, Express.js</li>
+          <li>PostgreSQL, MongoDB, GraphQL</li>
+          <li>Git, Github</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Project</h2>
+
+        <div class="project">
+          <h3>Job Portal App</h3>
+          <p>
+            Fullstack web app with authentication, CRUD features, and responsive
+            UI built using React.js, Node.js, and Tailwind CSS.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>Coliving</h3>
+          <p>
+            Single Page Application (SPA) for property rentals built using
+            React.js and RESTful APIs. Features include property booking, “Add
+            to Favorites”, JWT authentication, and data caching for optimized
+            performance. Designed with a modern responsive UI using Tailwind
+            CSS.
+          </p>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <p>© 2025 Stephen Joshua Manullang. All rights reserved.</p>
     </footer>
