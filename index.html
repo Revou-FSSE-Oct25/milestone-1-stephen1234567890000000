@@ -58,58 +58,130 @@
       </section>
 
       <section id="about" class="about">
-        <h2>About <span>Me</span></h2>
-        <p>
-          Enthusiastic and detail-oriented Fullstack Javascript with hands-on
-          experience. Proficient in React.js, Next.js, Express, Node.js, RESTful
-          APIs, PostgreSQL, GraphQL, MongoDB, and TypeScript, with strong
-          interest in crafting responsive, high performance web applications.
-          Eager to grow and contribute to innovative projects in a dynamic
-          development team.
-        </p>
-        <h2>Education</h2>
-        <ul>
-          <li>SMK Negeri 1 Batam - Software Engineering (2023 - 2025)</li>
-        </ul>
+        <div class="about-content">
+          <h2>About <span>Me</span></h2>
+          <p>
+            Enthusiastic and detail-oriented Fullstack Javascript with hands-on
+            experience. Proficient in React.js, Next.js, Express, Node.js,
+            RESTful APIs, PostgreSQL, GraphQL, MongoDB, and TypeScript, with
+            strong interest in crafting responsive, high performance web
+            applications. Eager to grow and contribute to innovative projects in
+            a dynamic development team.
+          </p>
+          <div class="about-list">
+            <h2>Education</h2>
+            <ul>
+              <li>SMK Negeri 1 Batam - Software Engineering (2023 - 2025)</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>React.js, Next.js</li>
-          <li>Node.js, Express.js</li>
-          <li>PostgreSQL, MongoDB, GraphQL</li>
-          <li>Git, Github</li>
-        </ul>
+        <h2 class="heading">Skills</h2>
+        <div class="skills-container">
+          <div class="skill-card">
+            <h3>HTML, CSS, JavaScript</h3>
+            <p>Build responsive and interactive web interfaces from scratch.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>React.js, Next.js</h3>
+            <p>Develop dynamic UIs using a component-based architecture.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Node.js, Express.js</h3>
+            <p>
+              Create RESTful APIs and backend servers with a modular structure.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <h3>PostgreSQL, MongoDB, GraphQL</h3>
+            <p>
+              Design and manage relational and non-relational databases, and
+              perform efficient queries with GraphQL.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Git, GitHub</h3>
+            <p>
+              Manage version control, collaborate with teams, and deploy
+              projects using Git workflows.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="projects" class="projects">
-        <h2>Project</h2>
+        <h2 class="heading">Project</h2>
 
-        <div class="project">
-          <h3>Job Portal App</h3>
-          <p>
-            Fullstack web app with authentication, CRUD features, and responsive
-            UI built using React.js, Node.js, and Tailwind CSS.
-          </p>
-        </div>
-
-        <div class="project">
-          <h3>Coliving</h3>
-          <p>
-            Single Page Application (SPA) for property rentals built using
-            React.js and RESTful APIs. Features include property booking, “Add
-            to Favorites”, JWT authentication, and data caching for optimized
-            performance. Designed with a modern responsive UI using Tailwind
-            CSS.
-          </p>
+        <div class="project-box">
+          <div class="project-card">
+            <img src="assets/Job.png" alt="jobs" />
+            <div class="project-text">
+              <h3>Job Portal App</h3>
+              <p>
+                Fullstack web app with authentication, CRUD features, and
+                responsive UI built using React.js, Node.js, and Tailwind CSS.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/Living.png" alt="coliving" />
+            <div class="project-text">
+              <h3>Coliving</h3>
+              <p>
+                Single Page Application (SPA) for property rentals built using
+                React.js and RESTful APIs. Features include property booking,
+                “Add to Favorites”, JWT authentication, and data caching for
+                optimized performance. Designed with a modern responsive UI
+                using Tailwind CSS.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>© 2025 Stephen Joshua Manullang. All rights reserved.</p>
+    <footer class="footer">
+      <div class="social-acc">
+        <a href="#">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-twitter"></i>
+        </a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#projects">Project</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <p class="copyrights">
+        © 2025 Stephen Joshua Manullang. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
