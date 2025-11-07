@@ -45,7 +45,7 @@ It consists of two main pages:
 
 ## ⚙️ How to Access the Website
 You can access the live website here:  
-👉 **[https://stephen1234567890000000.github.io/html/](https://stephen1234567890000000.github.io/html/)**  
+👉 **[https://stephen1234567890000000.github.io/html/](https://revou-fsse-oct25.github.io/milestone-1-stephen1234567890000000/)**  
 
 Or open the project locally by:
 1. Downloading the repository  
