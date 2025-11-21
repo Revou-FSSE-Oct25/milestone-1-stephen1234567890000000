@@ -3,185 +3,254 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <title>Stephen — Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <style>
+      .nav-shrink {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        background: rgba(255, 255, 255, 0.65) !important;
+        border-color: rgba(200, 200, 200, 0.35) !important;
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12) !important;
+        backdrop-filter: blur(18px) !important;
+      }
+    </style>
   </head>
-  <body>
-    <header class="header">
-      <a href="#home" class="logo"> Stephen Joshua <span>Manullang</span> </a>
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Project</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="gradient-btn">Contact Me</button>
-    </header>
-    <main>
-      <section id="home">
-        <div class="home-content">
-          <h1>I'm <span>Stephen Joshua Manullang</span></h1>
-          <h3>
-            Fullstack <span>JavaScript Developer</span> passionate about
-            building web apps.
-          </h3>
-          <div class="social-acc">
-            <a href="https://github.com/stephen1234567890000000" >
-              <i class="bx bxl-github"></i>
-            </a>
-            <a href="#">
-              <i class="bx bxl-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/stephshestyles/">
-              <i class="bx bxl-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="bx bxl-twitter"></i>
-            </a>
-          </div>
-          <div class="btn-group">
-            <a href="#" class="btn">Hire</a>
-          </div>
-        </div>
-      </section>
 
-      <section id="about" class="about">
-        <div class="about-content">
-          <h2>About <span>Me</span></h2>
-          <p>
-            Enthusiastic and detail-oriented Fullstack Javascript with hands-on
-            experience. Proficient in React.js, Next.js, Express, Node.js,
-            RESTful APIs, PostgreSQL, GraphQL, MongoDB, and TypeScript, with
-            strong interest in crafting responsive, high performance web
-            applications. Eager to grow and contribute to innovative projects in
-            a dynamic development team.
-          </p>
-          <div class="about-list">
-            <h2>Education</h2>
-            <ul>
-              <li>SMK Negeri 1 Batam - Software Engineering (2023 - 2025)</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <body class="bg-white text-gray-900 antialiased pt-28">
+    <div
+      class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.9),_rgba(230,230,230,0.4))]"
+    ></div>
 
-      <section id="skills" class="skills">
-        <h2 class="heading">Skills</h2>
-        <div class="skills-container">
-          <div class="skill-card">
-            <h3>HTML, CSS, JavaScript</h3>
-            <p>Build responsive and interactive web interfaces from scratch.</p>
-          </div>
+    <nav
+      id="navbar"
+      class="fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[92%] md:w-[75%] px-8 py-4 rounded-full bg-white/50 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-white/20 transition-all duration-500"
+    >
+      <h1 class="text-2xl font-semibold tracking-tight">Stephen</h1>
 
-          <div class="skill-card">
-            <h3>React.js, Next.js</h3>
-            <p>Develop dynamic UIs using a component-based architecture.</p>
-          </div>
+      <div class="hidden md:flex gap-10 text-gray-600">
+        <a href="#about" class="hover:text-black transition">About</a>
+        <a href="#skills" class="hover:text-black transition">Skills</a>
+        <a href="#projects" class="hover:text-black transition">Projects</a>
+        <a href="#contact" class="hover:text-black transition">Contact</a>
+      </div>
+    </nav>
 
-          <div class="skill-card">
-            <h3>Node.js, Express.js</h3>
-            <p>
-              Create RESTful APIs and backend servers with a modular structure.
-            </p>
-          </div>
+    <section class="min-h-[85vh] flex items-center px-8 md:px-20">
+      <div class="max-w-3xl fade-up">
+        <h1
+          class="text-6xl md:text-8xl font-semibold tracking-tight leading-[1.05]"
+        >
+          Building <span class="text-gray-400">clean experiences</span><br />
+          with modern code.
+        </h1>
 
-          <div class="skill-card">
-            <h3>PostgreSQL, MongoDB, GraphQL</h3>
-            <p>
-              Design and manage relational and non-relational databases, and
-              perform efficient queries with GraphQL.
-            </p>
-          </div>
+        <p class="mt-8 text-xl text-gray-600 max-w-xl">
+          I create web applications with high performance, elegant UI, and a
+          smooth user experience — inspired by Apple’s design philosophy.
+        </p>
 
-          <div class="skill-card">
-            <h3>Git, GitHub</h3>
-            <p>
-              Manage version control, collaborate with teams, and deploy
-              projects using Git workflows.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="projects">
-        <h2 class="heading">Project</h2>
-
-        <div class="project-box">
-          <div class="project-card">
-            <img src="assets/Job.png" alt="jobs" />
-            <div class="project-text">
-              <h3>Job Portal App</h3>
-              <p>
-                Fullstack web app with authentication, CRUD features, and
-                responsive UI built using React.js, Node.js, and Tailwind CSS.
-              </p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/Living.png" alt="coliving" />
-            <div class="project-text">
-              <h3>Coliving</h3>
-              <p>
-                Single Page Application (SPA) for property rentals built using
-                React.js and RESTful APIs. Features include property booking,
-                “Add to Favorites”, JWT authentication, and data caching for
-                optimized performance. Designed with a modern responsive UI
-                using Tailwind CSS.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="social-acc">
-        <a href="https://github.com/stephen1234567890000000">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="#">
-          <i class="bx bxl-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/stephshestyles/">
-          <i class="bx bxl-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="bx bxl-twitter"></i>
-        </a>
+        <button
+          class="mt-10 px-8 py-4 bg-black text-white text-lg rounded-full hover:opacity-80 transition duration-500"
+        >
+          Explore My Work
+        </button>
       </div>
 
-      <ul class="list">
-        <li>
-          <a href="#">FAQ</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#projects">Project</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <p class="copyrights">
-        © 2025 Stephen Joshua Manullang | All rights reserved.
+      <div class="hidden md:block ml-auto fade-up">
+        <img
+          src="https://i.pinimg.com/736x/c9/98/94/c9989446ce23e4f64444daa268eb4671.jpg"
+          class="w-[450px] rounded-3xl shadow-2xl"
+        />
+      </div>
+    </section>
+
+    <div class="h-px bg-gray-200/40 my-24"></div>
+
+    <section id="about" class="px-8 md:px-20 fade-up">
+      <h2 class="text-5xl font-semibold">About Me</h2>
+
+      <p class="text-gray-500 mt-6 max-w-3xl leading-relaxed text-lg">
+        I'm a fullstack developer who loves crafting clean, modern applications
+        with a focus on performance and user experience.
       </p>
+
+      <div
+        class="mt-10 p-10 bg-white/60 backdrop-blur-xl rounded-3xl shadow-lg hover:shadow-xl transition-all"
+      >
+        <p class="text-gray-700 text-lg leading-relaxed">
+          I create fullstack experiences using React, Node.js, GraphQL, Redis,
+          and modern tooling.
+        </p>
+      </div>
+    </section>
+
+    <div class="h-px bg-gray-200/40 my-24"></div>
+
+    <section id="skills" class="px-8 md:px-20">
+      <h2 class="text-5xl font-semibold fade-up">Skills</h2>
+      <p class="text-gray-500 mt-4 fade-up">
+        Tools & technologies I love working with.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-10 mt-14">
+        <div
+          class="p-10 bg-white/60 backdrop-blur-xl rounded-3xl shadow-lg hover:shadow-xl transition fade-up"
+        >
+          <h3 class="text-2xl font-semibold">Frontend</h3>
+          <p class="text-gray-500 mt-3">
+            React, Tailwind, Expo, NativeWind, Next.Js
+          </p>
+        </div>
+
+        <div
+          class="p-10 bg-white/60 backdrop-blur-xl rounded-3xl shadow-lg hover:shadow-xl transition fade-up"
+        >
+          <h3 class="text-2xl font-semibold">Backend</h3>
+          <p class="text-gray-500 mt-3">
+            Node.js, Express, GraphQL, Redis, RESTful API'S
+          </p>
+        </div>
+
+        <div
+          class="p-10 bg-white/60 backdrop-blur-xl rounded-3xl shadow-lg hover:shadow-xl transition fade-up"
+        >
+          <h3 class="text-2xl font-semibold">Database</h3>
+          <p class="text-gray-500 mt-3">
+            MongoDB, PostgreSQL, MySQL, Sequelize
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-px bg-gray-200/40 my-24"></div>
+
+    <section id="projects" class="px-8 md:px-20">
+      <h2 class="text-5xl font-semibold fade-up">Featured Projects</h2>
+      <p class="text-gray-500 mt-4 fade-up">
+        A few things I’ve built recently.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-14 mt-14">
+        <div
+          class="rounded-[2rem] overflow-hidden shadow-xl hover:scale-[1.02] transition duration-700 fade-up"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+            class="w-full"
+          />
+          <div class="p-10">
+            <h3 class="text-3xl font-semibold mb-3">My Social Media App</h3>
+            <p class="text-gray-500 text-lg">
+              Full GraphQL mobile app with posts, comments, likes, search, and
+              follow system.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-[2rem] overflow-hidden shadow-xl hover:scale-[1.02] transition duration-700 fade-up"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+            class="w-full"
+          />
+          <div class="p-10">
+            <h3 class="text-3xl font-semibold mb-3">My Grocery</h3>
+            <p class="text-gray-500 text-lg">
+              REST & GraphQL backend with authentication, authorization, Redis
+              caching, and complete CRUD.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-px bg-gray-200/40 my-24"></div>
+
+    <section id="contact" class="px-8 md:px-20 fade-up">
+      <h2 class="text-5xl font-semibold text-center">Let's Connect</h2>
+      <p class="text-gray-500 mt-4 text-center">
+        I'm open for collaboration or freelance work.
+      </p>
+
+      <div
+        class="mt-12 max-w-3xl mx-auto p-10 bg-white/60 backdrop-blur-xl rounded-3xl shadow-xl"
+      >
+        <form class="grid gap-6">
+          <div class="relative">
+            <input
+              type="text"
+              id="name"
+              required
+              class="peer w-full px-5 py-4 rounded-xl border border-gray-300 bg-white/70 focus:outline-none focus:ring-2 focus:ring-black/50 transition"
+            />
+            <label
+              for="name"
+              class="absolute left-5 top-4 text-gray-500 text-lg pointer-events-none transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-lg peer-focus:top-[-0.6rem] peer-focus:text-black peer-focus:text-sm bg-white/60 px-1"
+            >
+              Your Name
+            </label>
+          </div>
+
+          <div class="relative">
+            <input
+              type="email"
+              id="email"
+              required
+              class="peer w-full px-5 py-4 rounded-xl border border-gray-300 bg-white/70 focus:outline-none focus:ring-2 focus:ring-black/50 transition"
+            />
+            <label
+              for="email"
+              class="absolute left-5 top-4 text-gray-500 text-lg pointer-events-none transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-lg peer-focus:top-[-0.6rem] peer-focus:text-black peer-focus:text-sm bg-white/60 px-1"
+            >
+              Email Address
+            </label>
+          </div>
+
+          <div class="relative">
+            <textarea
+              id="message"
+              rows="5"
+              required
+              class="peer w-full px-5 py-4 rounded-xl border border-gray-300 bg-white/70 focus:outline-none focus:ring-2 focus:ring-black/50 transition resize-none"
+            ></textarea>
+            <label
+              for="message"
+              class="absolute left-5 top-4 text-gray-500 text-lg pointer-events-none transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-lg peer-focus:top-[-0.6rem] peer-focus:text-black peer-focus:text-sm bg-white/60 px-1"
+            >
+              Message
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="mt-4 w-full bg-black text-white py-4 rounded-full text-lg font-medium flex items-center justify-center gap-2 hover:opacity-80 transition duration-500 group"
+          >
+            Send Message
+            <span
+              class="transition-transform transform group-hover:translate-x-2"
+              >→</span
+            >
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-16 text-center text-gray-400 text-sm mt-24">
+      © 2025 Stephen — All Rights Reserved.
     </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+          navbar.classList.add("nav-shrink");
+        } else {
+          navbar.classList.remove("nav-shrink");
+        }
+      });
+    </script>
   </body>
 </html>
